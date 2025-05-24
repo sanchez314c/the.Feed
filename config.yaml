@@ -1,0 +1,64 @@
+sources:
+  arxiv:
+    enabled: true
+    categories:
+      - cs.AI
+      - cs.CL
+      - cs.CV
+      - cs.LG
+      - cs.NE
+    max_results: 10
+  
+  news:
+    enabled: true
+    keywords:
+      - artificial intelligence
+      - machine learning
+      - LLM
+      - large language model
+      - AI research
+      - generative AI
+      - Anthropic
+      - OpenAI
+      - Google AI
+      - Meta AI
+    max_results: 10
+  
+  youtube:
+    enabled: true
+    channels:
+      - UCNJ1Ymd5yFuUPtn21xtRbbw  # Two Minute Papers
+      - UCbfYPyITQ-7l4upoX8nvctg  # StatQuest
+      - UCZHmQk67mSJgfCCTn7xBfew  # Yannic Kilcher
+      - UC9-y-6csu5WGm29I7JiwpnA  # Computerphile
+    keywords:
+      - artificial intelligence
+      - machine learning
+      - LLM
+      - large language model
+      - AI research
+      - generative AI
+    max_results: 10
+  
+  company_blogs:
+    enabled: true
+    feeds:
+      - name: OpenAI
+        url: https://openai.com/blog/rss.xml
+      - name: Anthropic
+        url: https://www.anthropic.com/feed.xml
+      - name: Google AI
+        url: https://blog.research.google/feeds/posts/default?alt=rss
+      - name: Meta AI
+        url: https://ai.meta.com/blog/rss/
+    max_results: 10
+
+ui:
+  max_items_per_category: 10
+  default_thumbnail: default_thumbnail.png
+  refresh_button_text: "Refresh AI News"
+  page_title: "AIFEED - Your AI Intelligence Dashboard"
+  page_icon: "🤖"
+
+scheduler:
+  refresh_interval_hours: 1
